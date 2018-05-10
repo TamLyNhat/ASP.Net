@@ -1,0 +1,255 @@
+﻿@using TKHTTT.Models
+@model IEnumerable<ThongTinSach>
+@{
+    ViewBag.Title = "Index";
+    Layout = "~/Views/Layout/HomeLayout.cshtml";
+}
+<h1>asdasdsads</h1>
+    <!--KinhDi-->
+@foreach (var item in Model)
+{
+    <div class="container FullWidth">
+        <div class="clearfix border-bottom1" id="kinhdi">
+            <h1 class="text-muted">@item.TenTL asdasd</h1>
+        </div>
+    </div>
+    @*foreach (var item1 in Model)
+    {
+        <div class="container ">
+            <div class="jumbotron FullWidth">
+                <div class="row">
+                    <div class="col-lg-4 col-md-4 col-sm-4">
+                        <div class="row justify-content-center">
+                            <div>
+                  
+                                <img src="@Url.Content("~/Content/Image/" + item1.HinhAnh)"  class="fiximage1 img-thumbnail " alt="error" />
+                            </div>
+                        </div>
+                        <div class="caption Text-Topic">
+                            <h3>@item1.TenSach</h3>
+                            <h4>Tác giả: @item1.TenTG</h4>
+                            <p>Giá: @item1.GiaBia</p>
+                            <p>
+                                <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal1">
+                                    Mua
+                                </button>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    }*@
+
+}
+
+@*<div class="container FullWidth">
+    <div class="clearfix border-bottom1" id="kinhdi">
+        <h1 class="text-muted">Kinh dị</h1>
+    </div>
+</div>
+
+<div class="container ">
+    <div class="jumbotron FullWidth">
+        <div class="row">
+            <div class="col-lg-4 col-md-4 col-sm-4">
+                <div class="row justify-content-center">
+                    <div>
+                        <img src="~/Content/image/kinhdi1.jpg" class="fiximage1 img-thumbnail " alt="Cinque Terre" />
+                    </div>
+                </div>
+                <div class="caption Text-Topic">
+                    <h3>Con Ma Cây Vả</h3>
+                    <h4>Tác giả: Baydon</h4>
+                    <p>Giá: 120.000</p>
+                    <p>
+                        <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal1">
+                            Mua
+                        </button>
+                    </p>
+                </div>
+            </div>
+
+
+            <div class="col-lg-4 col-md-4 col-sm-4">
+
+                <div class="row justify-content-center">
+                    <div>
+                        <img src="image/kinhdi2.jpg" class="fiximage1 img-thumbnail " alt="Cinque Terre" />
+                    </div>
+                </div>
+                <div class="caption Text-Topic">
+                    <h3>IT</h3>
+                    <h4>Tác giả: Stephan King</h4>
+                    <p>Giá: 150.000</p>
+                    <p>
+                        <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal1">
+                            Mua
+                        </button>
+                    </p>
+                </div>
+
+            </div>
+            <div class="col-lg-4 col-md-4 col-sm-4">
+
+                <div class="row justify-content-center">
+                    <div>
+                        <img src="~/Content/image/kinhdi3.jpg" class="fiximage1 img-thumbnail " alt="Cinque Terre" />
+                    </div>
+                </div>
+                <div class="caption Text-Topic">
+                    <h3>Oan hồn máu</h3>
+                    <h4>Tác giả: Alexander</h4>
+                    <p>Giá: 200.000</p>
+                    <p>
+                        <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal1">
+                            Mua
+                        </button>
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!--EndKinhDi-->
+<!--TrinhTham-->
+<div class="container FullWidth">
+    <div class="clearfix border-bottom1" id="trinhtham">
+        <h1 class="text-muted">Trinh Thám</h1>
+    </div>
+</div>
+
+<div class="container">
+    <div class="jumbotron FullWidth">
+        <div class="row">
+            <div class="col-lg-4 col-md-4 col-sm-4">
+                <div class="row justify-content-center">
+                    <div>
+                        <img src="~/Content/image/trinhtham1.jpg" class="fiximage1 img-thumbnail " alt="Cinque Terre" />
+                    </div>
+                </div>
+                <div class="caption Text-Topic">
+                    <h3>Sherlock Holmes</h3>
+                    <h4>Tác giả: Sir Authur Conan Doyle</h4>
+                    <p>Giá: 120.000</p>
+                    <p>
+                        <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal1">
+                            Mua
+                        </button>
+                    </p>
+                </div>
+
+            </div>
+            <div class="col-lg-4 col-md-4 col-sm-4">
+
+                <div class="row justify-content-center">
+                    <div>
+                        <img src="~/Content/image/trinhtham2.jpg" class="fiximage1 img-thumbnail " alt="Cinque Terre" />
+                    </div>
+                </div>
+                <div class="caption Text-Topic">
+                    <h3>Ngũ Quái Sài Gòn</h3>
+                    <h4>Tác giả: Bùi Chí Vinh</h4>
+                    <p>Giá: 150.000</p>
+                    <p>
+                        <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal1">
+                            Mua
+                        </button>
+                    </p>
+                </div>
+
+            </div>
+            <div class="col-lg-4 col-md-4 col-sm-4">
+
+                <div class="row justify-content-center">
+                    <div>
+                        <img src="~/Content/image/trinhtham3.jpg" class="fiximage1 img-thumbnail " alt="Cinque Terre" />
+                    </div>
+                </div>
+                <div class="caption Text-Topic">
+                    <h3>The Life We Bury</h3>
+                    <h4>Tác giả: Allen Eskens</h4>
+                    <p>Giá: 200.000</p>
+                    <p>
+                        <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal1">
+                            Mua
+                        </button>
+                    </p>
+                </div>
+
+            </div>
+        </div>
+    </div>
+</div>
+<!--EndTrinhTham-->
+<!--TinhYeu-->
+<div class="container FullWidth">
+    <div class="clearfix border-bottom1" id="tinhyeu">
+        <h1 class="text-muted">Tình Yêu</h1>
+    </div>
+</div>
+
+<div class="container">
+    <div class="jumbotron FullWidth">
+        <div class="row">
+            <div class="col-lg-4 col-md-4 col-sm-4">
+
+                <div class="row justify-content-center">
+                    <div>
+                        <img src="~/Content/image/tinhyeu1.jpg" class="fiximage1 img-thumbnail " alt="Cinque Terre" />
+                    </div>
+                </div>
+                <div class="caption Text-Topic">
+                    <h3>Nếu như yêu</h3>
+                    <h4>Tác giả: Born</h4>
+                    <p>Giá: 120.000</p>
+                    <p>
+                        <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal1">
+                            Mua
+                        </button>
+                    </p>
+                </div>
+
+            </div>
+            <div class="col-lg-4 col-md-4 col-sm-4">
+
+                <div class="row justify-content-center">
+                    <div>
+                        <img src="~/Content/image/tinhyeu2.jpg" class="fiximage1 img-thumbnail " alt="Cinque Terre" />
+                    </div>
+                </div>
+                <div class="caption Text-Topic">
+                    <h3>Điều Bí Mật</h3>
+                    <h4>Tác giả: Hân Như</h4>
+                    <p>Giá: 150.000</p>
+                    <p>
+                        <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal1">
+                            Mua
+                        </button>
+                    </p>
+                </div>
+
+            </div>
+            <div class="col-lg-4 col-md-4 col-sm-4">
+
+                <div class="row justify-content-center">
+                    <div>
+                        <img src="~/Content/image/tinhyeu3.jpg" class="fiximage1 img-thumbnail " alt="Cinque Terre" />
+                    </div>
+                </div>
+                <div class="caption Text-Topic">
+                    <h3>Giữa tình yêu và tình dục là tình gì</h3>
+                    <h4>Tác giả: Lương Cần Liêm</h4>
+                    <p>Giá: 200.000</p>
+                    <p>
+                        <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal1">
+                            Mua
+                        </button>
+                    </p>
+                </div>
+
+            </div>
+        </div>
+    </div>
+</div>*@
+<!--EndKinhDi-->

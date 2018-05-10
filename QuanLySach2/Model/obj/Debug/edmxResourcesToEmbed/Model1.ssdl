@@ -1,0 +1,20 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="QuanLySachModel.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+  <EntityType Name="NhanVien">
+    <Key>
+      <PropertyRef Name="MaNV" />
+    </Key>
+    <Property Name="MaNV" Type="char" MaxLength="5" Nullable="false" />
+    <Property Name="MaQuyen" Type="char" MaxLength="5" Nullable="false" />
+    <Property Name="TenNV" Type="char" MaxLength="50" />
+    <Property Name="Phai" Type="bit" />
+    <Property Name="NgaySinh" Type="datetime" />
+    <Property Name="DiaChiNV" Type="char" MaxLength="15" />
+    <Property Name="Email" Type="char" MaxLength="50" />
+    <Property Name="SoDienThoaiNV" Type="numeric" Precision="15" Scale="0" />
+    <Property Name="MatKhauNV" Type="char" MaxLength="24" />
+  </EntityType>
+  <EntityContainer Name="QuanLySachModelStoreContainer">
+    <EntitySet Name="NhanVien" EntityType="Self.NhanVien" Schema="dbo" store:Type="Tables" />
+  </EntityContainer>
+</Schema>

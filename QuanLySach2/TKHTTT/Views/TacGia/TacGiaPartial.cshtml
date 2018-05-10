@@ -1,0 +1,12 @@
+﻿@using TKHTTT.Models
+@model List<TacGia>
+
+
+<button type="button" class="btn btn-secondary dropdown-toggle" data-toggle="dropdown">Tác giả</button>
+<ul class="dropdown-menu" role="menu">
+    @foreach (var item in Model)
+    {
+        <li><strong><a href="#" data-toggle="tooltip">@item.TenTG</a></strong></li>
+    }
+    <li><strong><a href="#" data-toggle="tooltip">Tác giả khác....</a></strong></li>
+</ul>

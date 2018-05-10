@@ -1,0 +1,170 @@
+﻿<!DOCTYPE html>
+
+<html lang="en">
+<head>
+    <meta name="keywords" content="" />
+    <meta name="description" content="" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <!--vô hiệu hóa tính năng phóng to trên các thiết bị di động-->
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <link href="~/Content/icon/haloween.ico" rel="shortcut icon" type="image/x-icon" />
+    <link href="~/Content/CSS/bootstrap-theme.css" rel="stylesheet" />
+    <link href="~/Content/CSS/bootstrap-theme.min.css" rel="stylesheet" />
+    <link rel="stylesheet" type="text/css" href="~/Content/CSS/bootstrap.css">
+    <link rel="stylesheet" href="~/Content/CSS/bootstrap.min.css" />
+    <link href="~/Content/CSS/style1.css" rel="stylesheet" type="text/css"/>
+    <title>Alexander</title>
+</head>
+<body>
+    <!--Header-->
+    @*  *@
+    @RenderPage("_Navigation.cshtml")
+
+    <!-- Carousel -->
+
+    @*Chen vao PartialView*@
+    <div class="container-fluid">
+
+        @Html.Action("SachMoiPartial","SachMoi")
+        
+    </div>
+
+
+    <!-- EndCarousel -->
+    <!-- Dropdown -->
+    <nav class="navbar navbar-expand-md navbar-expand-lg navbar-expand-sm navbar-secondary bg-secondary justify-content-center">
+        <div class="btn-group" role="group" aria-label="Basic example">
+
+         @Html.Action("TacGiaPartial", "TacGia")
+
+            <div class="btn-group" role="group">
+                @Html.Action("TheloaiPartial", "TheLoai")
+            </div>
+
+        </div>
+    </nav>
+    <!-- EndDropdown -->
+    <!--EndHeader-->
+
+    @RenderBody()
+
+    @*<!--Body-->
+
+    <!-- EndBody -->*@
+    <!--Footer-->
+
+    <div class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-4 col-md-4 col-sm-4">
+                    <h1 id="text-footer">DỊCH VỤ</h1>
+                    <h1 class="title-footer"><i><img src="~/Content/image/email.png" class="fiximage"></i>gmail.com</h1>
+                    <h1 class="title-footer"><i><img src="~/Content/image/phone.png" class="fiximage" /></i>01227756135</h1>
+                    <h1 class="title-footer"><i><img src="~/Content/image/location.png" class="fiximage" /></i>CanTho</h1>
+                    <h1 class="title-footer"><i><img src="~/Content/image/facebook.png" class="fiximage" /></i><a href="https://www.facebook.com/Alexander.NhatTam">Alexander Rip Tâm Đinh</a></h1>
+                    <h1 class="title-footer"><i><img src="~/Content/image/facebook.png" class="fiximage" /></i><a href="https://www.facebook.com/profile.php?id=100006739788324">Trần Thanh Duyên</a></h1>
+                </div>
+                <div class="col-lg-3 col-md-3 col-sm-3">
+                    <h1 id="text-footer">HỖ TRỢ</h1>
+                    <h1 class="title-footer"><a href="#">Điều khoản sử dụng</a></h1>
+                    <h1 class="title-footer"><a href="#">Chính sách bảo mật</a></h1>
+                    <h1 class="title-footer"><a href="#">Hệ thống trung tâm</a></h1>
+                </div>
+                <div class="col-lg-5 col-md-5 col-sm-5">
+                    <div>
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d7857.657484955752!2d105.7696807219847!3d10.03098707131952!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1svi!2s!4v1522070233042" width="500" height="400" frameborder="0" style="border:0" allowfullscreen></iframe>
+                    </div>
+                </div>
+            </div>
+            <div class="copy1">
+                <center>
+                    <h4>
+                        &copy; Trang web được viết bởi Lý Nhật Tâm và Trần Thanh Duyên
+                    </h4>
+                </center>
+            </div>
+
+        </div>
+    </div>
+
+    <!-- Modal - Đăng nhập -->
+    <div class="container">
+        <!-- Button trigger modal -->
+        <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="exampleModalLabel">Đăng nhập</h5>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+                    <div class="modal-body">
+                        <form>
+                            <div class="form-group">
+                                <h5 class="text-primary">Số Điện Thoại</h5>
+                                <input type="text" class="form-control" placeholder="Số Điện Thoại"></input>
+                                <h5 class="text-primary">Mật khẩu</h5>
+                                <input type="password" class="form-control" placeholder="Mật khẩu"></input>
+                            </div>
+                        </form>
+
+
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-dismiss="modal">Đóng</button>
+                        <button type="button" class="btn btn-primary">Đăng nhập</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- EndModal Đăng nhập -->
+    <!-- Modal - Mua Hàng -->
+    <div class="container">
+        <!-- Button trigger modal -->
+        <div class="modal fade" id="exampleModal1" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="exampleModalLabel">Nhập thông tin khách hàng</h5>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+                    <div class="modal-body">
+
+                        <div class="form-group">
+                            <h5 class="text-danger">Họ và Tên</h5>
+                            <input type="text" class="form-control" id="hvt" placeholder="Họ và Tên">
+                        </div>
+                        <div class="form-group">
+                            <h5 class="text-danger">Số điện thoại</h5>
+                            <input type="text" class="form-control" id="sdt" placeholder="Số điện thoại">
+                        </div>
+                        <div class="form-group">
+                            <h5 class="text-danger">Địa chỉ</h5>
+                            <input type="text" class="form-control" id="dc" placeholder="Địa chỉ">
+                        </div>
+
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-dismiss="modal">Đóng</button>
+                        <button type="button" class="btn btn-primary">Mua Hàng</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- EndModal Mua Hàng -->
+    <!--EndFooter-->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script type="text/javascript" src="~/Content/scripts/bootstrap.min.js"></script>
+    <script type="text/javascript" src="http://code.google.com/apis/gears/gears_init. js"></script>
+    <script type="text/javascript" src="~/Content/scripts/bootstrap.js"></script>
+    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+
+</body>
+</html>

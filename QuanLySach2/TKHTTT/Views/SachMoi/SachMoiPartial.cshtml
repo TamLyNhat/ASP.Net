@@ -1,0 +1,72 @@
+﻿@using TKHTTT.Models;
+@model List<Sach>
+
+<div class="row">
+    <div class="col-md-3 col-sm-3 col-lg-3">
+        <div id="section11">
+            <div class="activity1">
+                <h1 class="item-header1">Sách mới</h1>
+
+                @{
+                    foreach (var item in Model)
+                    {
+                        <div class="activity-list-update">
+                            <img src="@Url.Content("~/Content/Image/" + item.HinhAnh)"  width="40" height="50" alt="Image"/>
+                            <p><strong>Tiêu đề: @item.TenSach <br /> Giá: @item.GiaBia <br /><a href="#">Xem chi tiết</a></strong></p>
+                        </div>
+                    }
+                }
+
+               
+                @*<div class="activity-list-update">
+                    <img src="~/Content/image/IT.jpg" width="40" height="40" alt="Image" />
+
+                    <p><strong title="3DS Max-Thủ Thuật Render Phối Cảnh kiến Trúc Ban Ngày Và Đêm Với V-Ray 1.50 RC3">Tiêu đề: 3DS Max-Thủ Thuật Render Phối ...</strong><br><a href="/Sach/XemChiTiet?masach=2">Xem chi tiết</a></p>
+
+                </div>
+                <div class="activity-list-update">
+                    <img src="~/Content/image/OHM.jpg" width="40" height="40" alt="Image" />
+
+                    <p><strong title="Tự Học InDesign CS3">Tiêu đề: Tự Học InDesign CS3</strong><br><a href="/Sach/XemChiTiet?masach=3">Xem chi tiết</a></p>
+                    <div class="clear"></div>
+
+                </div>
+
+                <div class="activity-list-update">
+                    <img src="~/Content/image/OHM.jpg" width="40" height="40" alt="Image" />
+
+                    <p><strong title="Tự Học InDesign CS3">Tiêu đề: Tự Học InDesign CS3</strong><br><a href="/Sach/XemChiTiet?masach=3">Xem chi tiết</a></p>
+                    <div class="clear"></div>
+
+                </div>*@
+
+            </div>
+        </div>
+    </div>
+    <div class="col-md-9 col-sm-9 col-lg-9">
+        <div id="SLIDE" class="carousel slide" data-ride="carousel">
+            <ol class="carousel-indicators">
+                <li data-target="#SLIDE" data-slide-to="0" class="active"></li>
+                <li data-target="#SLIDE" data-slide-to="1"></li>
+                <li data-target="#SLIDE" data-slide-to="2"></li>
+            </ol>
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img class="d-block w-100" src="~/Content/image/slide1.jpg" alt="First slide">
+                </div>
+                <div class="carousel-item">
+                    <img class="d-block w-100" src="~/Content/image/slide2.jpg" alt="Second slide">
+                </div>
+                <div class="carousel-item">
+                    <img class="d-block w-100" src="~/Content/image/slide3.jpg" alt="Third slide">
+                </div>
+            </div>
+            <a class="carousel-control-prev" href="#SLIDE" data-slide="prev">
+                <span class="carousel-control-prev-icon"></span>
+            </a>
+            <a class="carousel-control-next" href="#SLIDE" data-slide="next">
+                <span class="carousel-control-next-icon"></span>
+            </a>
+        </div>
+    </div>
+</div>

@@ -1,0 +1,97 @@
+﻿@model IEnumerable<TKHTTT.Models.Sach>
+
+@{
+    ViewBag.Title = "getListBook";
+    Layout = "~/Areas/Admin/Views/Shared/_Layout.cshtml";
+}
+
+<<div class="row">
+    <div class="col-lg-12">
+        <div class="panel panel-default">
+            <div class="panel-heading" style="font-weight:bold; font-size:20px">
+                Danh mục sách
+            </div>
+            <div class="panel-body">
+                <div class="row">
+                    <p>
+                        <img src="~/Content/image/add.jpg" style="height: 20px; width: 20px"/>
+                        @Html.ActionLink("Thêm sách mới", "CreateBook")
+                    </p>
+                    <table class="table">
+                        <tr>
+                            <th>
+                                Tên sách
+                                <!--@Html.DisplayNameFor(model => model.TenSach) -->
+                            </th>
+                            <th>
+                                Mã sách
+                                <!--@Html.DisplayNameFor(model => model.MaSach) -->
+                            </th>
+                            <th>
+                                Mã thể loại
+                                <!--@Html.DisplayNameFor(model => model.MaTL) -->
+                            </th>
+                            <th>
+                                Mã nhà xuất bản
+                                <!-- @Html.DisplayNameFor(model => model.MaNXB)-->
+                            </th>
+                            <th>
+                                Giá bìa
+                                <!-- @Html.DisplayNameFor(model => model.GiaBia) -->
+                            </th>
+                            <th>
+                                Trạng thái đã bán hay chưa
+                                <!-- @Html.DisplayNameFor(model => model.TrangThai) -->
+                            </th>
+                            <th>
+                                Hình ảnh
+                                <!--@Html.DisplayNameFor(model => model.HinhAnh) -->
+                            </th>
+                            <th></th>
+                        </tr>
+
+                        @foreach (var item in Model)
+                        {
+                            <tr>
+                                <td>
+                                    @Html.DisplayFor(modelItem => item.TenSach)
+                                </td>
+                                <td>
+                                    @Html.DisplayFor(modelItem => item.MaSach)
+                                </td>
+                                <td>
+                                    @Html.DisplayFor(modelItem => item.MaTL)
+                                </td>
+                                <td>
+                                    @Html.DisplayFor(modelItem => item.MaNXB)
+                                </td>
+                                <td>
+                                    @Html.DisplayFor(modelItem => item.GiaBia)
+                                </td>
+                                <td>
+                                    @Html.DisplayFor(modelItem => item.TrangThai)
+                                </td>
+                                <td>
+                                    <img src="@Url.Content("~/Content/image/" + item.HinhAnh)" width="45" />
+                                </td>
+                                <td>
+                                    @Html.ActionLink("Edit", "EditBook", new { id = item.MaSach }) |
+                                    @Html.ActionLink("Details", "Details", new { id = item.MaSach }) |
+                                    @Html.ActionLink("Delete", "Delete", new { id = item.MaSach })
+                                </td>
+                            </tr>
+                        }
+
+                    </table>
+
+
+                </div>
+                <!-- /.row (nested) -->
+            </div>
+            <!-- /.panel-body -->
+        </div>
+        <!-- /.panel -->
+
+    </div>
+    <!-- /.row -->
+</div>

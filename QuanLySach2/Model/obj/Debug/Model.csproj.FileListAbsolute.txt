@@ -1,0 +1,11 @@
+D:\visual 2013\QuanLySach2\Model\bin\Debug\QuanLySach.mdf
+D:\visual 2013\QuanLySach2\Model\bin\Debug\QuanLySach_log.ldf
+D:\visual 2013\QuanLySach2\Model\bin\Debug\Model.dll.config
+D:\visual 2013\QuanLySach2\Model\bin\Debug\Model.dll
+D:\visual 2013\QuanLySach2\Model\bin\Debug\Model.pdb
+D:\visual 2013\QuanLySach2\Model\bin\Debug\EntityFramework.dll
+D:\visual 2013\QuanLySach2\Model\bin\Debug\EntityFramework.SqlServer.dll
+D:\visual 2013\QuanLySach2\Model\bin\Debug\EntityFramework.xml
+D:\visual 2013\QuanLySach2\Model\bin\Debug\EntityFramework.SqlServer.xml
+D:\visual 2013\QuanLySach2\Model\obj\Debug\Model.dll
+D:\visual 2013\QuanLySach2\Model\obj\Debug\Model.pdb
