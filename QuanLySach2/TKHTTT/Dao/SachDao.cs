@@ -22,7 +22,7 @@ namespace TKHTTT.Dao
                                 TenSach = c.TenSach,
                                 GiaBia = c.GiaBia,
                                 HinhAnh = c.HinhAnh,
-                                MaTG = b.MaTG,
+                                MaTG = b.MaTG,  
                                 TenTG = a.TenTG,
                                 TenTL = d.TenTL
                             });
