@@ -13,7 +13,8 @@ namespace TKHTTT.Controllers
         // GET: Sach
 
         QuanLyNhaSachEntities db = new QuanLyNhaSachEntities();
-
+        
+        [ChildActionOnly]
         public PartialViewResult SachMoiPartial()
         {
             var listSachMoi = db.Sach.Where(x => x.Moi == 1).Take(3).ToList();

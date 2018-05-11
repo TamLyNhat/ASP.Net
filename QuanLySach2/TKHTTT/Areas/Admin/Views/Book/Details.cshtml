@@ -19,14 +19,6 @@
                             <table class="table">
                                 <tr>
                                     <td>
-                                        Mã sách
-                                    </td>
-                                    <td>
-                                        @Html.DisplayFor(model => model.MaSach)
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <td>
                                         Tên sách
                                     </td>
                                     <td>
@@ -35,44 +27,48 @@
                                 </tr>
                                 <tr>
                                     <td>
-                                        Tên thể loại
+                                        Mã thể loại
                                     </td>
-                                    <td>
-                                        @Html.DisplayFor(model => model.TheLoai.TenTL)
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <td>
-                                        Tên nhà xuất bản
-                                    </td>
-                                    <td>
-                                        @Html.DisplayFor(model => model.NhaXuatBan.TenNXB)
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <td>
-                                        Tên nhà xuất bản
-                                    </td>
-                                    <td>
-                                        @Html.DisplayFor(model => model.NhaXuatBan.TenNXB)
-                                    </td>
-                                </tr>
 
+                                    <td>
+                                        @Html.DisplayFor(model => model.MaTL)
+                                    </td>
+                                </tr>
                                 <tr>
                                     <td>
-                                        Giá bìa
+                                        Mã NXB
                                     </td>
+
+                                    <td>
+                                        @Html.DisplayFor(model => model.MaNXB)
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        Giá
+                                    </td>
+
                                     <td>
                                         @Html.DisplayFor(model => model.GiaBia)
                                     </td>
+
                                 </tr>
                                 <tr>
                                     <td>
-                                       Trạng thái
+                                        Trạng thái (1:còn, 0: đã bán)
                                     </td>
 
                                     <td>
                                         @Html.DisplayFor(model => model.TrangThai)
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        Tình trạng sách (1: mới, 0: cũ)
+                                    </td>
+
+                                    <td>
+                                        @Html.DisplayFor(model => model.Moi)
                                     </td>
                                 </tr>
                                 <tr>
@@ -88,7 +84,7 @@
                         </div>
 
                         <p>
-                            @*@Html.ActionLink("Edit", "EditBook", new { id = Model.BookId }) |*@
+                            @Html.ActionLink("Edit", "Edit", new { id = Model.MaSach }) |
                             @Html.ActionLink("Back to List", "getListBook")
                         </p>
 

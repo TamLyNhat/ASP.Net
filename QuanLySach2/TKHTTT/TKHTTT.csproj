@@ -215,18 +215,21 @@
     <Compile Include="Areas\Admin\Code\CustomMembershipProvider.cs" />
     <Compile Include="Areas\Admin\Code\SessionHelper.cs" />
     <Compile Include="Areas\Admin\Code\UserSession.cs" />
+    <Compile Include="Areas\Admin\Controllers\AutoController.cs" />
     <Compile Include="Areas\Admin\Controllers\BookController.cs" />
     <Compile Include="Areas\Admin\Controllers\HomeController.cs" />
     <Compile Include="Areas\Admin\Controllers\LoginController.cs" />
-    <Compile Include="Areas\Admin\Controllers\SachesController.cs" />
     <Compile Include="Areas\Admin\Models\LoginModel.cs" />
+    <Compile Include="Areas\Admin\Models\SachMoi.cs" />
     <Compile Include="Controllers\AccountController.cs" />
     <Compile Include="Controllers\TacGiaController.cs" />
     <Compile Include="Controllers\TheLoaiController.cs" />
     <Compile Include="Controllers\TrangChuController.cs" />
     <Compile Include="Controllers\ManageController.cs" />
     <Compile Include="Controllers\SachMoiController.cs" />
+    <Compile Include="Dao\NewBook.cs" />
     <Compile Include="Dao\SachDao.cs" />
+    <Compile Include="Dao\ThongTinSachChiTiet.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
@@ -316,6 +319,11 @@
     <Content Include="Content\image\NQSG.jpg" />
     <Content Include="Content\image\OHM.jpg" />
     <Content Include="Content\image\phone.png" />
+    <Content Include="Content\image\Screenshot %28141%29.png" />
+    <Content Include="Content\image\Screenshot %28149%29.png" />
+    <Content Include="Content\image\Screenshot %28157%29.png" />
+    <Content Include="Content\image\Screenshot %28161%29.png" />
+    <Content Include="Content\image\Screenshot %28162%29.png" />
     <Content Include="Content\image\SLH.jpg" />
     <Content Include="Content\image\slide1.jpg" />
     <Content Include="Content\image\slide2.jpg" />
@@ -362,11 +370,6 @@
     <Content Include="Areas\Admin\Views\Login\Index.cshtml" />
     <Content Include="Areas\Admin\Views\Book\getListBook.cshtml" />
     <Content Include="Areas\Admin\Views\Book\CreateBook.cshtml" />
-    <Content Include="Areas\Admin\Views\Saches\Create.cshtml" />
-    <Content Include="Areas\Admin\Views\Saches\Delete.cshtml" />
-    <Content Include="Areas\Admin\Views\Saches\Details.cshtml" />
-    <Content Include="Areas\Admin\Views\Saches\Edit.cshtml" />
-    <Content Include="Areas\Admin\Views\Saches\Index.cshtml" />
     <Content Include="Areas\Admin\Views\Book\Details.cshtml" />
     <EntityDeploy Include="Models\QuanLyNhaSachEntities.edmx">
       <Generator>EntityModelCodeGenerator</Generator>
@@ -375,6 +378,12 @@
     <Content Include="Models\QuanLyNhaSachEntities.edmx.diagram">
       <DependentUpon>QuanLyNhaSachEntities.edmx</DependentUpon>
     </Content>
+    <Content Include="Areas\Admin\Views\Auto\Create.cshtml" />
+    <Content Include="Areas\Admin\Views\Auto\Delete.cshtml" />
+    <Content Include="Areas\Admin\Views\Auto\Details.cshtml" />
+    <Content Include="Areas\Admin\Views\Auto\Edit.cshtml" />
+    <Content Include="Areas\Admin\Views\Auto\Index.cshtml" />
+    <Content Include="Areas\Admin\Views\Book\Edit.cshtml" />
     <None Include="Scripts\jquery-1.10.2.intellisense.js" />
     <Content Include="Scripts\jquery-1.10.2.js" />
     <Content Include="Scripts\jquery-1.10.2.min.js" />

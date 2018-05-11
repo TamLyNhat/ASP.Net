@@ -5,7 +5,7 @@
     <!-- Diagram content (shape and connector positions) -->
     <edmx:Diagrams>
       <Diagram DiagramId="597a49ab033d41dda7d28e6894d9312a" Name="Diagram1">
-        <EntityTypeShape EntityType="QuanLyNhaSachModel.ChiTietSach" Width="1.5" PointX="5.25" PointY="3.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="QuanLyNhaSachModel.ChiTietSach" Width="1.5" PointX="7.125" PointY="3.75" IsExpanded="true" />
         <EntityTypeShape EntityType="QuanLyNhaSachModel.HoaDon" Width="1.5" PointX="3" PointY="9.75" IsExpanded="true" />
         <EntityTypeShape EntityType="QuanLyNhaSachModel.HoaDonChiTiet" Width="1.5" PointX="5.25" PointY="0.75" IsExpanded="true" />
         <EntityTypeShape EntityType="QuanLyNhaSachModel.KhachHang" Width="1.5" PointX="0.75" PointY="8.125" IsExpanded="true" />
@@ -14,7 +14,7 @@
         <EntityTypeShape EntityType="QuanLyNhaSachModel.Quyen" Width="1.5" PointX="1.5" PointY="15.625" IsExpanded="true" />
         <EntityTypeShape EntityType="QuanLyNhaSachModel.Sach" Width="1.5" PointX="3" PointY="3.125" IsExpanded="true" />
         <EntityTypeShape EntityType="QuanLyNhaSachModel.sysdiagrams" Width="1.5" PointX="5.75" PointY="7.125" IsExpanded="true" />
-        <EntityTypeShape EntityType="QuanLyNhaSachModel.TacGia" Width="1.5" PointX="3" PointY="18" IsExpanded="true" />
+        <EntityTypeShape EntityType="QuanLyNhaSachModel.TacGia" Width="1.5" PointX="8" PointY="6.75" IsExpanded="true" />
         <EntityTypeShape EntityType="QuanLyNhaSachModel.TheLoai" Width="1.5" PointX="0.75" PointY="1" IsExpanded="true" />
         <AssociationConnector Association="QuanLyNhaSachModel.FK_VIET_VIET_TACGIA" ManuallyRouted="false" />
         <AssociationConnector Association="QuanLyNhaSachModel.FK_VIET_VIET2_SACH" ManuallyRouted="false" />
