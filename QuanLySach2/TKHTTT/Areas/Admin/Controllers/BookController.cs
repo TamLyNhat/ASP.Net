@@ -10,6 +10,8 @@ using System.Web.Mvc;
 using TKHTTT.Areas.Admin.Models;
 using TKHTTT.Dao;
 using TKHTTT.Models;
+using PagedList;
+using PagedList.Mvc;
 
 namespace TKHTTT.Areas.Admin.Controllers
 {
@@ -17,11 +19,15 @@ namespace TKHTTT.Areas.Admin.Controllers
     {
         QuanLyNhaSachEntities db = new QuanLyNhaSachEntities();
         // GET: Admin/Book
-        public ActionResult getListBook()
+        public ActionResult getListBook(int page = 1, int pagesize = 10)
         {
             //Xử lý thao tác linq đơn giản
-            var listBook = from s in db.Sach select s;
-            return View(listBook);
+            //var listBook = from s in db.Sach select s;
+            // return View(listBook.ToList());
+
+            var listPage = new Models.AccountModel();
+            var model = listPage.ListAllPage(page, pagesize);
+            return View(model);
         }
 
         //Thêm sách mới
@@ -50,6 +56,11 @@ namespace TKHTTT.Areas.Admin.Controllers
         [ValidateAntiForgeryToken] //Security help
         public ActionResult CreateBook(Sach book, HttpPostedFileBase fileUpload)
         {
+            List<SachMoi> moi = new NewBook().sm();
+            ViewBag.nxb = db.NhaXuatBan.ToList();
+            ViewBag.tl = db.TheLoai.ToList();
+
+            ViewBag.m = new SelectList(moi, "So", "Chu");
             try
             {
                 if (ModelState.IsValid)
@@ -73,14 +84,15 @@ namespace TKHTTT.Areas.Admin.Controllers
                     db.SaveChanges();
                 }
             }
-            catch (RetryLimitExceededException)
+            catch (Exception)
             {
-                ModelState.AddModelError("", "Error Save Data");
+                ModelState.AddModelError("", "Lỗi trùng Mã sách: " + book.MaSach);
+                return View();
             }
 
             //Cập nhật lại danh sách hiển thị
-            var list = from s in db.Sach select s;
-            return View("getListBook", list);
+            //var list = from s in db.Sach select s;
+            return RedirectToAction("getListBook");
         }
 
         public ActionResult Edit(string id)
@@ -159,5 +171,39 @@ namespace TKHTTT.Areas.Admin.Controllers
             }
             return View(sach);
         }
+
+        public ActionResult Delete(string id)
+        {
+            if (id == null)
+            {
+                return new HttpStatusCodeResult(HttpStatusCode.BadRequest);
+            }
+            Sach sach = db.Sach.Find(id);
+            if (sach == null)
+            {
+                return HttpNotFound();
+            }
+            return View(sach);
+        }
+
+        [HttpPost, ActionName("Delete")]
+        [ValidateAntiForgeryToken]
+        public ActionResult DeleteConfirmed(string id)
+        {
+            Sach sach = db.Sach.Find(id);
+            try
+            {
+               
+                db.Sach.Remove(sach);
+                db.SaveChanges();
+            }
+            catch (Exception)
+            {
+                ModelState.AddModelError("", "Lỗi !! Bạn cần xóa Mã sách: " + sach.MaSach + " trong các bảng khác trước");
+                return View();
+            }
+            return RedirectToAction("getListBook");
+        }
+
     }
 }

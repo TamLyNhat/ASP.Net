@@ -1,5 +1,6 @@
-﻿@model IEnumerable<TKHTTT.Models.Sach>
-
+﻿@model PagedList.PagedList<TKHTTT.Models.Sach>
+@using PagedList.Mvc;
+@*@using TKHTTT.Models*@
 @{
     ViewBag.Title = "getListBook";
     Layout = "~/Areas/Admin/Views/Shared/_Layout.cshtml";
@@ -21,31 +22,35 @@
                         <tr>
                             <th>
                                 Tên sách
-                                <!--@Html.DisplayNameFor(model => model.TenSach) -->
+                                @*@Html.DisplayNameFor(model => model.TenSach)*@ 
                             </th>
                             <th>
                                 Mã sách
-                                <!--@Html.DisplayNameFor(model => model.MaSach) -->
+                                @*@Html.DisplayNameFor(model => model.MaSach)*@ 
                             </th>
                             <th>
-                                Mã thể loại
-                                <!--@Html.DisplayNameFor(model => model.MaTL) -->
+                               Tên thể loại
+                                @*@Html.DisplayNameFor(model => model.TheLoai.TenTL)*@ 
                             </th>
                             <th>
-                                Mã nhà xuất bản
-                                <!-- @Html.DisplayNameFor(model => model.MaNXB)-->
+                                Tên nhà xuất bản
+                                 @*@Html.DisplayNameFor(model => model.NhaXuatBan.TenNXB)*@
                             </th>
                             <th>
                                 Giá bìa
-                                <!-- @Html.DisplayNameFor(model => model.GiaBia) -->
+                                 @*@Html.DisplayNameFor(model => model.GiaBia)*@ 
                             </th>
                             <th>
                                 Trạng thái đã bán hay chưa
-                                <!-- @Html.DisplayNameFor(model => model.TrangThai) -->
+                                 @*@Html.DisplayNameFor(model => model.TrangThai)*@ 
+                            </th>
+                            <th>
+                                Tình trạng sách
+                                @*@Html.DisplayNameFor(model => model.Moi)*@
                             </th>
                             <th>
                                 Hình ảnh
-                                <!--@Html.DisplayNameFor(model => model.HinhAnh) -->
+                                @*@Html.DisplayNameFor(model => model.HinhAnh)*@ 
                             </th>
                             <th></th>
                         </tr>
@@ -60,16 +65,19 @@
                                     @Html.DisplayFor(modelItem => item.MaSach)
                                 </td>
                                 <td>
-                                    @Html.DisplayFor(modelItem => item.MaTL)
+                                    @Html.DisplayFor(modelItem => item.TheLoai.TenTL)
                                 </td>
                                 <td>
-                                    @Html.DisplayFor(modelItem => item.MaNXB)
+                                    @Html.DisplayFor(modelItem => item.NhaXuatBan.TenNXB)
                                 </td>
                                 <td>
                                     @Html.DisplayFor(modelItem => item.GiaBia)
                                 </td>
                                 <td>
                                     @Html.DisplayFor(modelItem => item.TrangThai)
+                                </td>
+                                <td>
+                                    @Html.DisplayFor(modelItem => item.Moi)
                                 </td>
                                 <td>
                                     <img src="@Url.Content("~/Content/image/" + item.HinhAnh)" width="45" />
@@ -83,7 +91,9 @@
                         }
 
                     </table>
-
+                    <div style="margin-left:10px;">
+                        @Html.PagedListPager(Model, page => Url.Action("getListBook", new { page }))
+                    </div>
 
                 </div>
                 <!-- /.row (nested) -->

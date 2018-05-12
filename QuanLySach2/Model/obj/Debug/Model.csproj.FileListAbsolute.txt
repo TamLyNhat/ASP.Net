@@ -7,6 +7,5 @@ D:\visual 2013\QuanLySach2\Model\bin\Debug\EntityFramework.dll
 D:\visual 2013\QuanLySach2\Model\bin\Debug\EntityFramework.SqlServer.dll
 D:\visual 2013\QuanLySach2\Model\bin\Debug\EntityFramework.xml
 D:\visual 2013\QuanLySach2\Model\bin\Debug\EntityFramework.SqlServer.xml
-D:\visual 2013\QuanLySach2\Model\obj\Debug\Model.csprojResolveAssemblyReference.cache
 D:\visual 2013\QuanLySach2\Model\obj\Debug\Model.dll
 D:\visual 2013\QuanLySach2\Model\obj\Debug\Model.pdb

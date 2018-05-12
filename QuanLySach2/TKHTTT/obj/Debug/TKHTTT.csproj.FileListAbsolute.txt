@@ -43,6 +43,8 @@ D:\visual 2013\QuanLySach2\TKHTTT\bin\Microsoft.Web.Infrastructure.dll
 D:\visual 2013\QuanLySach2\TKHTTT\bin\Model.dll
 D:\visual 2013\QuanLySach2\TKHTTT\bin\Newtonsoft.Json.dll
 D:\visual 2013\QuanLySach2\TKHTTT\bin\Owin.dll
+D:\visual 2013\QuanLySach2\TKHTTT\bin\PagedList.dll
+D:\visual 2013\QuanLySach2\TKHTTT\bin\PagedList.Mvc.dll
 D:\visual 2013\QuanLySach2\TKHTTT\bin\System.Net.Http.Formatting.dll
 D:\visual 2013\QuanLySach2\TKHTTT\bin\System.Web.Helpers.dll
 D:\visual 2013\QuanLySach2\TKHTTT\bin\System.Web.Http.dll
@@ -61,6 +63,8 @@ D:\visual 2013\QuanLySach2\TKHTTT\bin\Microsoft.AI.Web.xml
 D:\visual 2013\QuanLySach2\TKHTTT\bin\Microsoft.AI.WindowsServer.xml
 D:\visual 2013\QuanLySach2\TKHTTT\bin\Microsoft.ApplicationInsights.xml
 D:\visual 2013\QuanLySach2\TKHTTT\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+D:\visual 2013\QuanLySach2\TKHTTT\bin\PagedList.xml
+D:\visual 2013\QuanLySach2\TKHTTT\bin\PagedList.Mvc.xml
 D:\visual 2013\QuanLySach2\TKHTTT\bin\System.Net.Http.Formatting.xml
 D:\visual 2013\QuanLySach2\TKHTTT\bin\System.Web.Http.xml
 D:\visual 2013\QuanLySach2\TKHTTT\bin\System.Web.Http.WebHost.xml
