@@ -449,6 +449,8 @@
     <Content Include="Views\TheLoai\TheloaiPartial.cshtml" />
     <Content Include="Views\SachMoi\Details.cshtml" />
     <Content Include="Views\SachTheoTheLoai\SachTheoTheLoaiPartial.cshtml" />
+    <Content Include="Views\TheLoai\LocTheoTheLoai.cshtml" />
+    <Content Include="Views\TacGia\LocTheoTacGia.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Assets\admin\data\" />

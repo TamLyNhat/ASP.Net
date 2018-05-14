@@ -1,0 +1,6 @@
+INSERT INTO [dbo].[TheLoai] ([MaTL], [TenTL]) VALUES (N'KDi  ', N'Kinh Di                                           ')
+INSERT INTO [dbo].[TheLoai] ([MaTL], [TenTL]) VALUES (N'NNgon', N'NguNgon                                           ')
+INSERT INTO [dbo].[TheLoai] ([MaTL], [TenTL]) VALUES (N'TTham', N'Trinh Tham                                        ')
+INSERT INTO [dbo].[TheLoai] ([MaTL], [TenTL]) VALUES (N'TVui ', N'TruyenVui                                         ')
+INSERT INTO [dbo].[TheLoai] ([MaTL], [TenTL]) VALUES (N'TYeu ', N'Tinh Yeu                                          ')
+INSERT INTO [dbo].[TheLoai] ([MaTL], [TenTL]) VALUES (N'Tho  ', N'ThoXua                                            ')

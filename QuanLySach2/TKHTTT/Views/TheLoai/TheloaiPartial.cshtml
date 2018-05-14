@@ -7,7 +7,8 @@
 <div class="dropdown-menu" aria-labelledby="btn1">
     @foreach (var item in Model)
     {
-        <a class="dropdown-item" href="#">@item.TenTL </a>
+        @*<a class="dropdown-item" href="#">@item.TenTL </a>*@
+        @Html.ActionLink(item.TenTL, "LocTheoTheLoai", new { id = item.MaTL}, new { @class = "dropdown-item" })
     }
     
     <a class="dropdown-item" href="#">Thể loại khác </a>

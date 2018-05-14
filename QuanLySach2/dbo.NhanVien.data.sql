@@ -1,0 +1,1 @@
+INSERT INTO [dbo].[NhanVien] ([MaNV], [MaQuyen], [TenNV], [Phai], [NgaySinh], [DiaChiNV], [Email], [SoDienThoaiNV], [MatKhauNV]) VALUES (N'b1500', N'A    ', N'tam dinh                                          ', 1, N'1997-11-14 00:00:00', N'can tho        ', N'lynhattam@gmail.com                               ', CAST(987456321 AS Decimal(15, 0)), N'654321                  ')
