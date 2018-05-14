@@ -39,7 +39,7 @@ namespace TKHTTT.Areas.Admin.Controllers
             if (Membership.ValidateUser(model.MaNV, model.MatKhauNV) && ModelState.IsValid)
             {
                 FormsAuthentication.SetAuthCookie(model.MaNV, model.Rememberme);
-                return RedirectToAction("Index", "Home");
+                return RedirectToAction("getListBook", "Book");
             }
             else
             {

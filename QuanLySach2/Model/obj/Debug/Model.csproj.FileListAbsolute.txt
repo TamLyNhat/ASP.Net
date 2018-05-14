@@ -1,5 +1,3 @@
-D:\visual 2013\QuanLySach2\Model\bin\Debug\QuanLySach.mdf
-D:\visual 2013\QuanLySach2\Model\bin\Debug\QuanLySach_log.ldf
 D:\visual 2013\QuanLySach2\Model\bin\Debug\Model.dll.config
 D:\visual 2013\QuanLySach2\Model\bin\Debug\Model.dll
 D:\visual 2013\QuanLySach2\Model\bin\Debug\Model.pdb

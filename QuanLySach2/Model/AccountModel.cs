@@ -9,10 +9,10 @@ namespace Model
 {
     public class AccountModel
     {
-        QuanLySachEntities context = null;
+        LoginABCD context = null;
         public AccountModel()
         {
-            context = new QuanLySachEntities();
+            context = new LoginABCD();
         }
 
         public bool Login(string userName, string Password)
@@ -23,7 +23,7 @@ namespace Model
             };
 
             //Gọi thủ tục đã tạo có tên "Sp_Account_Login" sử dụng SingleOrDefault() để trả về giá trị duy nhất, 
-            var res = context.Database.SqlQuery<bool>("Sp_Account_Login1 @MaNV, @MatKhauNV", sqlParas).SingleOrDefault();
+            var res = context.Database.SqlQuery<bool>("Sp_Account_Login4 @MaNV, @MatKhauNV", sqlParas).SingleOrDefault();
             return res;
         }
 

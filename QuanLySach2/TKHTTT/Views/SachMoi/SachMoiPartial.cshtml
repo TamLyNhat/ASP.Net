@@ -12,7 +12,7 @@
                     {
                         <div class="activity-list-update">
                             <img src="@Url.Content("~/Content/Image/" + item.HinhAnh)"  width="40" height="50" alt="Image"/>
-                            <p><strong>Tiêu đề: @item.TenSach <br /> Giá: @item.GiaBia <br /><a href="#">Xem chi tiết</a></strong></p>
+                            <p><strong>Tiêu đề: @item.TenSach <br /> Giá: @item.GiaBia <br />@Html.ActionLink("Chi tiết sách", "Details", new { id = item.MaSach })</strong></p>
                         </div>
                     }
                 }

@@ -231,6 +231,8 @@
     <Compile Include="Areas\Admin\Models\LoginModel.cs" />
     <Compile Include="Areas\Admin\Models\SachMoi.cs" />
     <Compile Include="Controllers\AccountController.cs" />
+    <Compile Include="Controllers\ChiTietSachController.cs" />
+    <Compile Include="Controllers\SachTheoTheLoaiController.cs" />
     <Compile Include="Controllers\TacGiaController.cs" />
     <Compile Include="Controllers\TheLoaiController.cs" />
     <Compile Include="Controllers\TrangChuController.cs" />
@@ -238,7 +240,6 @@
     <Compile Include="Controllers\SachMoiController.cs" />
     <Compile Include="Dao\NewBook.cs" />
     <Compile Include="Dao\SachDao.cs" />
-    <Compile Include="Dao\ThongTinSachChiTiet.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
@@ -446,6 +447,8 @@
     <Content Include="Views\SachMoi\SachMoiPartial.cshtml" />
     <Content Include="Views\TacGia\TacGiaPartial.cshtml" />
     <Content Include="Views\TheLoai\TheloaiPartial.cshtml" />
+    <Content Include="Views\SachMoi\Details.cshtml" />
+    <Content Include="Views\SachTheoTheLoai\SachTheoTheLoaiPartial.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Assets\admin\data\" />

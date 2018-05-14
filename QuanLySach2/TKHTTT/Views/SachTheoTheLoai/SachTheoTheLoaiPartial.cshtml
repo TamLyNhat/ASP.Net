@@ -1,0 +1,23 @@
+﻿@using TKHTTT.Models;
+@model List<ThongTinSach>
+
+@foreach (var item1 in Model)
+{
+    <div class="col-lg-4 col-md-4 col-sm-4">
+        <div class="row justify-content-center">
+            <div>
+                <img src="@Url.Content("~/Content/Image/" + item1.HinhAnh)" class="fiximage1 img-thumbnail " alt="error" />
+            </div>
+        </div>
+        <div class="caption Text-Topic">
+            <h3>@item1.TenSach</h3>
+            <h4>Tác giả: @item1.TenTG</h4>
+            <p>Giá: @item1.GiaBia</p>
+            <p>
+                <button type="button" class="btn btn-secondary" data-toggle="modal" data-target="#exampleModal1">
+                    Mua
+                </button>
+            </p>
+        </div>
+    </div>
+}

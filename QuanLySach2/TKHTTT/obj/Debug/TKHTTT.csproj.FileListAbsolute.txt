@@ -11,8 +11,6 @@ D:\visual 2013\QuanLySach2\TKHTTT\bin\roslyn\System.Reflection.Metadata.dll
 D:\visual 2013\QuanLySach2\TKHTTT\bin\roslyn\vbc.exe
 D:\visual 2013\QuanLySach2\TKHTTT\bin\roslyn\VBCSCompiler.exe
 D:\visual 2013\QuanLySach2\TKHTTT\bin\roslyn\VBCSCompiler.exe.config
-D:\visual 2013\QuanLySach2\TKHTTT\bin\QuanLySach.mdf
-D:\visual 2013\QuanLySach2\TKHTTT\bin\QuanLySach_log.ldf
 D:\visual 2013\QuanLySach2\TKHTTT\bin\TKHTTT.dll.config
 D:\visual 2013\QuanLySach2\TKHTTT\bin\TKHTTT.dll
 D:\visual 2013\QuanLySach2\TKHTTT\bin\TKHTTT.pdb
