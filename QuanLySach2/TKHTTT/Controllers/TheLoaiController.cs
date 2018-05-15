@@ -25,9 +25,20 @@ namespace TKHTTT.Controllers
             //var e = from a in thongtin where a.TenTL == id select a;
             var t = thongtin.Where(x => x.MaTL == id);
 
+            if (t.ToList().Count == 0)
+            {
+                ViewBag.ThongBao = "Khong tim thay san pham nao";
+                return View(thongtin);
+            }
+
             ViewBag.tl = thongtin.Where(s => s.MaTL == id).Select(x => x.TenTL).First();
 
             return View(t.ToList());
+        }
+
+        public ActionResult TheloaiKhac()
+        {
+            return View(db.TheLoai.ToList());
         }
     }
 }

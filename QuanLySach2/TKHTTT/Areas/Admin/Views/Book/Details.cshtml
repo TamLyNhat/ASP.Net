@@ -19,6 +19,14 @@
                             <table class="table">
                                 <tr>
                                     <td>
+                                        Mã sách
+                                    </td>
+                                    <td>
+                                        @Html.DisplayFor(model => model.MaSach)
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
                                         Tên sách
                                     </td>
                                     <td>
@@ -85,7 +93,7 @@
 
                         <p>
                             @Html.ActionLink("Edit", "Edit", new { id = Model.MaSach }) |
-                            @Html.ActionLink("Back to List", "getListBook")
+                            @Html.ActionLink("Xem danh mục sách", "getListBook")
                         </p>
 
                     </div>

@@ -235,6 +235,7 @@
     <Compile Include="Controllers\SachTheoTheLoaiController.cs" />
     <Compile Include="Controllers\TacGiaController.cs" />
     <Compile Include="Controllers\TheLoaiController.cs" />
+    <Compile Include="Controllers\TimKiemController.cs" />
     <Compile Include="Controllers\TrangChuController.cs" />
     <Compile Include="Controllers\ManageController.cs" />
     <Compile Include="Controllers\SachMoiController.cs" />
@@ -451,6 +452,8 @@
     <Content Include="Views\SachTheoTheLoai\SachTheoTheLoaiPartial.cshtml" />
     <Content Include="Views\TheLoai\LocTheoTheLoai.cshtml" />
     <Content Include="Views\TacGia\LocTheoTacGia.cshtml" />
+    <Content Include="Views\TimKiem\KetQuaTimKiem.cshtml" />
+    <Content Include="Views\TheLoai\TheloaiKhac.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Assets\admin\data\" />
